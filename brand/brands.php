@@ -45,7 +45,7 @@ $brands = $brandController->getBrands();
                             </div>
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <input type="text" name="name" id="" class="form-control search" placeholder="Enter Brand name">
+                                <input type="text" name="name" id="" class="form-control search" placeholder="Search Brand Name...">
                             </div>
                             <div class="col-md-2">
                                 <button class="btn btn-dark btnSearch">Search</button>
@@ -53,7 +53,7 @@ $brands = $brandController->getBrands();
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <table class="table table-striped" id="datatablesSimple">
+                                <table class="table table-striped" id="">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -68,7 +68,7 @@ $brands = $brandController->getBrands();
                                             echo "<tr id=".$brand['brand_id'].">";
                                             echo "<td>".$count++."</td>";
                                             echo "<td>".$brand['brand_name']."</td>";
-                                            echo "<td><a class='btn btn-info mx-1' href='read-brand.php?id=".$brand['brand_id']."'>Read</a><a class='btn btn-warning  mx-1' href='edit-brand.php?id=".$brand['brand_id']."'>Edit</a><a class='btn btn-danger  mx-1' href='delete-brand.php?id=".$brand['brand_id']."'>Delete</a><button class='btn btn-dark btnDelete'>Delete Ajax</button></td>";
+                                            echo "<td><a class='btn btn-dark mx-1' href='read-brand.php?id=".$brand['brand_id']."'>Read</a><a class='btn btn-dark  mx-1' href='edit-brand.php?id=".$brand['brand_id']."'>Edit</a><a class='btn btn-dark  mx-1' href='delete-brand.php?id=".$brand['brand_id']."'>Delete</a><button class='btn btn-dark btnDelete'>Delete Ajax</button></td>";
                                             echo "</tr>";
                                         }
                                         ?>

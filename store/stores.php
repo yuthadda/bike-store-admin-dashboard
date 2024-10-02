@@ -62,7 +62,7 @@ $stores = $storeController->getStores();
                             </div>
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <input type="text" name="name" class="form-control storeSearch" placeholder="Enter to Search">
+                                <input type="text" name="name" class="form-control storeSearch" placeholder="Search Store Name...">
                             </div>
                             <div class="col-md-2">
                                 <button class="btn btn-dark btnStoreSearch ">Search</button>
@@ -70,7 +70,7 @@ $stores = $storeController->getStores();
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <table class="table table-stripped" id="datatablesSimple">
+                                <table class="table table-striped" id="">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -98,9 +98,9 @@ $stores = $storeController->getStores();
                                                 echo "<td>".$store['city']."</td>";
                                                 echo "<td>".$store['state']."</td>";
                                                 echo "<td>".$store['zip_code']."</td>";
-                                                echo "<td> <a class='btn btn-info mx-2' href='read-store.php?id=".$store['store_id']."'>Read</a>
-                                                 <a class='btn btn-warning mx-2' href='edit-store.php?id=".$store['store_id']."'>Edit</a>
-                                                  <button class='btn btn-danger btnStoreDelete'>Delete</button>"."</td>";
+                                                echo "<td> <a class='btn btn-dark mx-2' href='read-store.php?id=".$store['store_id']."'>Read</a>
+                                                 <a class='btn btn-dark mx-2' href='edit-store.php?id=".$store['store_id']."'>Edit</a>
+                                                  <button class='btn btn-dark btnStoreDelete'>Delete</button>"."</td>";
                                                 echo "</tr>";
 
                                             }

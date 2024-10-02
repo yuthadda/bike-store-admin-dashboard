@@ -45,7 +45,7 @@ $categories = $categoryController->getAllCategory();
                             </div>
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control search" placeholder="Search Category....">
+                                <input type="text" class="form-control search" placeholder="Enter Category Name...">
                             </div>
                             <div class="col-md-2">
                                 <button class="btn btn-dark btnSearchCategory">Search</button>
@@ -54,7 +54,7 @@ $categories = $categoryController->getAllCategory();
                     </div>
                     <div class="container">
                         <div class="row">
-                            <table class="table table-striped" id="datatablesSimple">
+                            <table class="table table-striped" id="">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -70,7 +70,7 @@ $categories = $categoryController->getAllCategory();
                                         <tr id=".$category['category_id'].">
                                         <td>".$count++."</td>
                                         <td>".$category['category_name']."</td>
-                                        <td><a href='read-categories.php?id=".$category['category_id']."' class='btn btn-danger mx-1'>Read</a><a href='edit-category.php?id=".$category['category_id']."' class='btn btn-info mx-1'>Edit</a><a href='delete-category.php?id=".$category['category_id']."' class='btn btn-success mx-1'>Delete</a><a class='btn btn-primary mx-1 btnDeleteCtg'>Delete Ajax</a></td>
+                                        <td><a href='read-categories.php?id=".$category['category_id']."' class='btn btn-dark mx-1'>Read</a><a href='edit-category.php?id=".$category['category_id']."' class='btn btn-dark mx-1'>Edit</a><a href='delete-category.php?id=".$category['category_id']."' class='btn btn-dark mx-1'>Delete</a><a class='btn btn-dark mx-1 btnDeleteCtg'>Delete Ajax</a></td>
                                         </tr>
                                         ";
                                     }

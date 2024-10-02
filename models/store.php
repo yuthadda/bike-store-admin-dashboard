@@ -100,7 +100,7 @@
         {
             $this->con=Database::connect();
             $this->con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            $sql = "select * from stores where (store_name like :data or phone like :data or email like :data or street like :data or city like :data or state like :data or zip_code like :data) and (deleted_at is null)";
+            $sql = "select * from stores where store_name like :data  and deleted_at is null";
             $statement=$this->con->prepare($sql);
             $search_data="%".$data."%";
             $statement->bindParam(":data",$search_data);

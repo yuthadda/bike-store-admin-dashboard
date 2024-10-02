@@ -23,7 +23,7 @@ $order_items = $orderController->getOrderItems($id);
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <a href="create-order.php" class="btn btn-dark">Back To Orders</a>
+                        <a href="order-index.php" class="btn btn-dark">Back To Orders</a>
                     </div>
                 </div>
                 <div class="row mb-3">

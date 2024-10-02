@@ -36,7 +36,7 @@ $customers = $customerController->getCustomers();
                             </div>
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <input type="text"  id="" class="form-control search" placeholder="Search Customer.....">
+                                <input type="text"  id="" class="form-control search" placeholder="Search Customer Name.....">
                             </div>
                             <div class="col-md-2">
                                 <button class="btn btn-dark btnSearchCustomer">Search</button>
@@ -46,7 +46,7 @@ $customers = $customerController->getCustomers();
 
                     <div class="container">
                         <div class="row col-md-12">
-                            <table class="table table-striped " id="datatablesSimple">
+                            <table class="table table-striped " id="">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -70,7 +70,7 @@ $customers = $customerController->getCustomers();
                                     <td>".$customer['last_name']."</td>
                                     <td>".$customer['phone']."</td>
                                     <td>".$customer['email']."</td>
-                                    <td><a href='read-customer.php?id=".$customer['customer_id']."' class='btn btn-success mx-1'>Read</a><a href='edit-customer.php?id=".$customer['customer_id']."' class='btn btn-warning mx-1'>Eidt</a><a href='delete-customer.php?id=".$customer['customer_id']."' class='btn btn-danger mx-1'>Delete</a><a class='btn btn-dark mx-1 btnDeleteCustomer'>Delete Ajax</a></td>
+                                    <td><a href='read-customer.php?id=".$customer['customer_id']."' class='btn btn-dark mx-1'>Read</a><a href='edit-customer.php?id=".$customer['customer_id']."' class='btn btn-dark mx-1'>Eidt</a><a href='delete-customer.php?id=".$customer['customer_id']."' class='btn btn-dark mx-1'>Delete</a><a class='btn btn-dark mx-1 btnDeleteCustomer'>Delete Ajax</a></td>
                                     </tr>
                                     ";
                                 }

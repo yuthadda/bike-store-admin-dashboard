@@ -29,9 +29,9 @@ $brands = $brandController->getBrands();
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">Dashboard</h1>
+                <h1 class="mt-4">Bike Store Admin Dashboard</h1>
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item active">(Bike Store Admin Dashboard)</li>
+                    <li class="breadcrumb-item active">(Store Informations)</li>
                 </ol>
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
@@ -91,13 +91,7 @@ $brands = $brandController->getBrands();
                         </div>
                     </div>
                 </div>
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-table me-1"></i>
-                        DataTable Example
-                    </div>
-
-                </div>
+                
             </div>
         </main>
 

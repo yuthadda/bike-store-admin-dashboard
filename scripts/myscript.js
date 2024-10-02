@@ -7,7 +7,7 @@ $(document).ready(function(){
         let tr=btnDelete.parent().parent();
         // console.log(tr);
         let id=tr.attr('id');
-        // console.log(id);
+        console.log(id);
         let status = confirm("Are you sure to delete??");
         if(status){
             $.ajax(

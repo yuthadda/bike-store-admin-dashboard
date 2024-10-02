@@ -68,15 +68,20 @@ try {
     <div id="layoutSidenav_content">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-12">
-                <?php
+        <div class="col-md-2"></div>
+            <div class="col-md-8">
+            <?php
                 if(isset($mess)){
                     echo '<span class="alert alert-success">'.$mess.'</span>';
                 }
                  ?>
             </div>
+        </div>
+        <div class="row mt-4">
+            
             <div class="col-md-2"></div>
             <div class="col-md-8">
+            
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="" class="form-label fw-bold ">Enter Customer Name</label>

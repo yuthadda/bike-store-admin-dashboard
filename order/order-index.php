@@ -30,7 +30,7 @@ $orders = $orderController->getOrders();
                             </div>
                         </div>
                         <div class="row col-md-12">
-                            <table class="table table-striped" id="datatablesSimple">
+                            <table class="table table-striped" id="">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -58,7 +58,7 @@ $orders = $orderController->getOrders();
                                             <td>".$order['shipped_date']."</td>
                                             <td>".$order['sname']."</td>
                                             <td>".$order['sfn']." ".$order['sln']."</td>
-                                            <td><a class='btn btn-success mx-1' href='order-detail.php?id=".$order['order_id']."'>Detail</a><button class='btn btn-info btnSend' onClick='sendEmail(".$order['order_id'].")'>Send Email</button></td>
+                                            <td><a class='btn btn-dark mx-1' href='order-detail.php?id=".$order['order_id']."'>Detail</a><button class='btn btn-dark btnSend' onClick='sendEmail(".$order['order_id'].")'>Send Email</button></td>
                                             </tr>
                                             ";
                                         }

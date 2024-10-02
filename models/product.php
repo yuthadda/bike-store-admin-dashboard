@@ -92,7 +92,7 @@ class Product{
     public function searchProductByData($data){
         $this->con = Database::connect();
         if($this->con){
-            $sql = "select * from products where product_name like :data or brand_id like :data or category_id like :data or model_year like :data or list_price like :data and deleted_at is null ";
+            $sql = "select * from products where product_name like :data and deleted_at is null ";
             $statement = $this->con->prepare($sql);
             $search_data = "%".$data."%";
             $statement->bindParam(":data",$search_data);

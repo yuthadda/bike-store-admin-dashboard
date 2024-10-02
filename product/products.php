@@ -38,7 +38,7 @@ $products = $productController->getAllProduct();
                     </div>
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
-                        <input type="text" class="form-control search" placeholder="Enter Product...">
+                        <input type="text" class="form-control search" placeholder="Enter Product Name...">
                     </div>
                     <div class="col-md-2">
                         <button class="btn btn-dark btnSearchProduct">Search</button>
@@ -48,7 +48,7 @@ $products = $productController->getAllProduct();
                 <div class="row">
                     <div class="col-md-12">
                         <form action="" method="post">
-                            <table class="table table-striped" id="datatablesSimple">
+                            <table class="table table-striped" id="">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -73,7 +73,7 @@ $products = $productController->getAllProduct();
                                                     <td>" . $product['category_id'] . "</td>
                                                     <td>" . $product['model_year'] . "</td>
                                                     <td>" . $product['list_price'] . "</td>
-                                                    <td><a href='read-product.php?id=" . $product['product_id'] . "' class='btn btn-success mx-1'>Read</a><a href='edit-product.php?id=" . $product['product_id'] . "' class='btn btn-info mx-1'>Edit</a><a href='delete-product.php?id=" . $product['product_id'] . "' class='btn btn-danger mx-1'>Delete</a><a class='btn btn-dark mx-1 btnDeleteProduct'>Delete Ajax</a></td>
+                                                    <td><a href='read-product.php?id=" . $product['product_id'] . "' class='btn btn-dark mx-1'>Read</a><a href='edit-product.php?id=" . $product['product_id'] . "' class='btn btn-dark mx-1'>Edit</a><a href='delete-product.php?id=" . $product['product_id'] . "' class='btn btn-dark mx-1'>Delete</a><a class='btn btn-dark mx-1 btnDeleteProduct'>Delete Ajax</a></td>
                                                     </tr>
                                                     ";
                                     }
