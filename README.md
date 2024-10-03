@@ -1,5 +1,11 @@
-# [Start Bootstrap - SB Admin](https://startbootstrap.com/template/sb-admin/) (Template)
+# Bike Store Admin Dashboard
 This is an admin dashboard for managing bike store operations,including inventory,sales and customer management.The project use this Bootstrap template as a starting point,but the code has been customized extensively to suit the needs of the bike store.
+
+***
+* Backend--> The backend of this project is powered by **PHP**
+* Database--> MYSQL
+* Frontend--> The UI is based on a Bootstrap template.You can find the original template below:
+
 [SB Admin](https://startbootstrap.com/template/sb-admin/) is an open source, admin dashboard template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
 ## Preview
